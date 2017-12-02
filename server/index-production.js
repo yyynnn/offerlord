@@ -36,7 +36,7 @@ function update(req, res) {
       //     console.log(res);
       //     response.sendStatus(200);
       //   });
-      response.sendStatus(200);
+      res.sendStatus(200);
     });
   });
 }
