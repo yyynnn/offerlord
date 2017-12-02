@@ -16,12 +16,12 @@
   "author": "Sergio Nikolaev",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^1.11.0",
-    "redux-devtools-extension": "^2.13.2",
-    "webpack-dev-middleware": "^1.10.2",
-    "webpack-hot-middleware": "^2.18.0"
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "redux-devtools-extension": "^2.13.2",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-hot-middleware": "^2.18.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
