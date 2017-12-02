@@ -28,9 +28,6 @@
   padding: 12px;
   line-height: 27px;
   display: block;
-  & img {
-    width: 24px;
-  }
 }
 
 .button__download {
