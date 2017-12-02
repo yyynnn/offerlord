@@ -4,7 +4,7 @@ var express = require("express");
 var path = require("path");
 var fs = require("fs");
 var bodyParser = require("body-parser");
-var handlebar = require("handlebars");
+var Handlebars = require("handlebars");
 var serveStatic = require("serve-static");
 // var pdf = require("html-pdf");
 // var pdfOptions = { format: "A4", width: "860px", orientation: "portrait" };
@@ -36,7 +36,7 @@ function update(req, res) {
       //     console.log(res);
       //     response.sendStatus(200);
       //   });
-        response.sendStatus(200);
+      response.sendStatus(200);
     });
   });
 }
