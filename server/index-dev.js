@@ -7,13 +7,6 @@ import webpackHotMiddleware from "webpack-hot-middleware";
 import webpackConfig from "../webpack.config.dev";
 import bodyParser from "body-parser";
 import Handlebars from "handlebars";
-// var pdf = require("html-pdf");
-// var pdfOptions = {
-//   format: "A4",
-//   width: "900px",
-//   height: "1265px",
-//   orientation: "portrait"
-// };
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -35,15 +28,7 @@ function update(req, res) {
     let result = compile(req.body);
     fs.writeFile(`./download/offer.html`, result, function(err) {
       if (err) throw err;
-      // var html = fs.readFileSync("./download/offer.html", "utf8");
-      // pdf
-      //   .create(result, pdfOptions)
-      //   .toFile("./download/offer.pdf", function(err, res) {
-      //     if (err) return console.log(err);
-      //     console.log(res);
-      //     response.sendStatus(200);
-      //   });
-        response.sendStatus(200);
+      response.sendStatus(200);
     });
   });
 }
