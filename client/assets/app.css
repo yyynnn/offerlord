@@ -1,0 +1,198 @@
+@import "variables.css";
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: var(--white);
+  color: #0d514c;
+  height: 100vh;
+  display: flex;
+}
+
+a {
+  color: #0d514c;
+  text-decoration: none;
+  border-bottom: 1px solid #0d514c;
+  display: inline-block;
+  line-height: 0.95;
+  text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
+}
+
+ul {
+  padding-right: 21px;
+  list-style-type: none;
+  text-align: right;
+}
+
+h1 {
+  color: #507e7a;
+  margin: 0;
+}
+
+div.RichTextEditor__root___2QXK-,
+input {
+  transition: 200ms all ease-in-out;
+}
+
+div.RichTextEditor__root___2QXK-:focus,
+input:focus {
+  border: 2px solid #78b9b6;
+  outline: none;
+}
+div.RichTextEditor__root___2QXK-:hover,
+input:hover {
+  border: 2px solid #78b9b6;
+}
+
+::-webkit-input-placeholder {
+  color: #73a7a3;
+  font-family: "CoreSans";
+}
+::-moz-placeholder {
+  color: #73a7a3;
+  font-family: "CoreSans";
+} /* Firefox 19+ */
+:-moz-placeholder {
+  color: #73a7a3;
+  font-family: "CoreSans";
+} /* Firefox 18- */
+:-ms-input-placeholder {
+  color: #73a7a3;
+  font-family: "CoreSans";
+}
+.app {
+  overflow: hidden;
+  filter: blur(0.4px);
+}
+.app__loader {
+  background-color: #fff;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  animation: 1400ms 1s loaderFade cubic-bezier(0.16, 0.01, 0, 0.99);
+  transform-origin: center;
+  z-index: 100;
+  display: flex;
+}
+
+.app__loader-wrapper {
+  animation: 2000ms loaderScale cubic-bezier(0.16, 0.01, 0, 0.99);
+  transform-origin: 26% 17%;
+  width: 156px;
+  height: 150px;
+  display: flex;
+}
+
+.app__loader_false {
+  display: none;
+}
+
+.app__children {
+  z-index: 1;
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfeff;
+}
+
+.app__leftLogo {
+  position: absolute;
+  z-index: 1;
+  animation-timing-function: cubic-bezier(0.16, 0.01, 0, 0.99);
+  animation: 1000ms leftLogoFly forwards;
+}
+.app__rightLogoMain {
+  position: relative;
+  z-index: 0;
+  top: -10px;
+  left: 21px;
+}
+
+.app__right {
+  animation-timing-function: cubic-bezier(0.16, 0.01, 0, 0.99);
+  animation: 1000ms RightLogoFly forwards;
+}
+
+.app__rightLogoHelper {
+  position: relative;
+  z-index: 1;
+  top: -37px;
+  left: -53px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 5%;
+}
+
+@media (max-width: 500px) {
+  .app__children {
+    align-items: center;
+  }
+}
+
+@keyframes leftLogoFly {
+  0% {
+    transform: translate(-100px, 100px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(2px, -2px);
+    opacity: 1;
+  }
+}
+
+@keyframes RightLogoFly {
+  0% {
+    transform: translate(100px, -100px);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-2px, 2px);
+    opacity: 1;
+  }
+}
+
+@keyframes loaderFade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loaderScale {
+  0% {
+    transform: scale(2.5);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}

@@ -1,0 +1,22 @@
+.public-DraftEditor-content {
+  font-family: "CoreSans";
+}
+div.RichTextEditor__root___2QXK- {
+  border: 2px solid #b0deda;
+  min-height: 240px;
+}
+div.EditorToolbar__root___3_Aqz {
+  border-bottom: 1px solid #b0deda;
+}
+.EditorToolbar__root___3_Aqz button {
+  border: 1px solid #b0deda;
+}
+
+.RichTextEditor__editor___1QqIU .public-DraftEditor-content {
+  min-height: 180px;
+}
+
+div.RichTextEditor__editor___1QqIU div.RichTextEditor__paragraph___3NTf9,
+.RichTextEditor__editor___1QqIU pre {
+  margin: 0 0;
+}

@@ -1,0 +1,70 @@
+.button__wrapper {
+  text-align: center;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  color: #424d82;
+  font-size: 40px;
+  width: 66px;
+  height: 66px;
+  outline: none;
+  transition: 200ms all ease;
+  cursor: pointer;
+  border: 2px solid #d3daff;
+  background-color: #fff;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  text-shadow: none;
+  margin: auto;
+}
+
+.button__addBlock {
+  text-align: center;
+  padding: 12px;
+  line-height: 27px;
+  display: block;
+  & img {
+    width: 24px;
+  }
+}
+
+.button__download {
+  width: 100%;
+  max-width: 126px;
+  border: 2px solid #0d514c;
+  background-color: #0d514c;
+  right: 0;
+  z-index: 12;
+  color: #ffffff;
+  border-radius: 0;
+  font-family: "CoreSans" !important;
+  font-size: 22px;
+  border-radius: 5px;
+  height: 50px;
+  top: 0;
+  bottom: 0;
+  padding: 5px 11px;
+}
+
+.button:hover {
+  border: 2px solid #0d514c;
+  box-shadow: 0 16px 20px -7px #84b9ce;
+  background-color: #fff;
+  color: #0d514c;
+  border-radius: 50%;
+}
+.button__download:hover {
+  border: 2px solid #0d514c;
+  border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+  .button__download {
+    max-width: 100px;
+  }
+}

@@ -1,0 +1,70 @@
+.mailBlock__main {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 35px;
+}
+.mailBlock__input-wrapper {
+  display: flex;
+  margin-top: 10px;
+}
+.mailBlock__input_buttonLink {
+  width: 100%;
+  display: block;
+}
+
+.mailBlock__input_buttonName {
+  width: 140px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 33%;
+}
+
+.mailBlock__input {
+  padding: 2%;
+  border-radius: 5px;
+  border: 2px solid #b0deda;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: "CoreSans";
+  background-color: #fff;
+  color: #0d504c;
+}
+
+.mailBlock__dropzone {
+  text-align: center;
+  padding: 4%;
+  border-radius: 5px;
+  border: 2px dashed #b0deda;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: 200ms all ease;
+  color: #b0deda;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.mailBlock__dropzone_active {
+  border: 3px solid #3e58ea;
+}
+
+.mailBlock__dropzone_reject {
+  border: 3px solid #ea3e3e;
+}
+
+.mailBlock__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.dz-default.dz-message {
+  font-size: 22px;
+  margin: 10px;
+}

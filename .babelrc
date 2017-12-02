@@ -1,0 +1,4 @@
+{
+  "presets": ["es2015", "latest", "react", "stage-0"],
+  "plugins": ["react-hot-loader/babel"]
+}

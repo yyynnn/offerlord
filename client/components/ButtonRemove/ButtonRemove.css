@@ -1,0 +1,27 @@
+.button_remove {
+  background-color: #fff;
+  padding: 0px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  width: 37px;
+  height: 37px;
+  outline: none;
+  transition: 200ms all ease;
+  cursor: pointer;
+  margin: 0 20px;
+  color: #80b1a9;
+  position: absolute;
+  right: -22px;
+  top: -3px;
+  border: 2px solid #b0deda;
+  text-align: center;
+  display: block;
+  & img {
+    width: 11px;
+  }
+}
+
+.button_remove:hover {
+  box-shadow: 0 16px 20px -7px #efefef;
+}
