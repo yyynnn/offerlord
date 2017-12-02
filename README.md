@@ -5,4 +5,4 @@ Simple pdf offer bulder, template independent.
 * Frontend built with react/redux.
 * Backend made with express.
 
-<img src="http://i.imgur.com/IMfpcMF.pngo" width="200">
+Server long-starting because of free plan.
