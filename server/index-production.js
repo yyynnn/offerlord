@@ -28,14 +28,6 @@ function update(req, res) {
     var result = compile(req.body);
     fs.writeFile(`./download/offer.html`, result, function(err) {
       if (err) throw err;
-      // var html = fs.readFileSync("./download/offer.html", "utf8");
-      // pdf
-      //   .create(result, pdfOptions)
-      //   .toFile("./download/offer.pdf", function(err, res) {
-      //     if (err) return console.log(err);
-      //     console.log(res);
-      //     response.sendStatus(200);
-      //   });
       res.sendStatus(200);
     });
   });
@@ -43,7 +35,7 @@ function update(req, res) {
 
 app.use(serveStatic(path.join(__dirname, "../download/")));
 router.get("/download", function(req, res) {
-  var file = path.join(__dirname, `../download/email.html`);
+  var file = path.join(__dirname, `../download/offer.html`);
   res.download(file, file);
 });
 
