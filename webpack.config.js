@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Offerlord",
-      favicon: path.join(__dirname, "favicon.ico"),
+      favicon: path.join(__dirname, "/favicon.ico"),
       template: path.join(__dirname, "templates/index-template.html")
     }),
     new webpack.DefinePlugin({
