@@ -1,4 +1,4 @@
-# <img src="/client/assets/img/logo.png" width="150"> v1.0.0
+# <img src="/client/assets/img/logo.png" width="160">
 
 Simple pdf offer bulder, template independent.
 * Frontend built with react/redux.
