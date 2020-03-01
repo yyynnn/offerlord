@@ -16,7 +16,7 @@
   "author": "Sergio Nikolaev",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "^4.18.2",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
